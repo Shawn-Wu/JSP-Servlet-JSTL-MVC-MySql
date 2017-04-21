@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MShop</display-name>
+  <servlet>
+    <servlet-name>MembeServletFront</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.front.MembeServletFront</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminLoginServletBack</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.back.AdminLoginServletBack</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MemberServletBack</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.back.MemberServletBack</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ItemServletBack</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.back.ItemServletBack</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsServletBack</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.back.GoodsServletBack</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsServletFront</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.front.GoodsServletFront</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShopcarServletFront</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.front.ShopcarServletFront</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MemberInfoServletFront</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.front.MemberInfoServletFront</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrdersServletBack</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.back.OrdersServletBack</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrdersServletFront</servlet-name>
+    <servlet-class>com.wuxin.shop.servlet.front.OrdersServletFront</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>MembeServletFront</servlet-name>
+    <url-pattern>/pages/MemberServletFront/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServletBack</servlet-name>
+    <url-pattern>/pages/back/AdminLoginServletBack/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberServletBack</servlet-name>
+    <url-pattern>/pages/back/admin/member/MemberServletBack/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ItemServletBack</servlet-name>
+    <url-pattern>/pages/back/admin/item/ItemServletBack/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsServletBack</servlet-name>
+    <url-pattern>/pages/back/admin/goods/GoodsServletBack/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsServletFront</servlet-name>
+    <url-pattern>/pages/front/goods/GoodsServletFront/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopcarServletFront</servlet-name>
+    <url-pattern>/pages/front/shopcar/ShopcarServletFront/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberInfoServletFront</servlet-name>
+    <url-pattern>/pages/front/member/MemberInfoServletFront/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServletBack</servlet-name>
+    <url-pattern>/pages/back/admin/orders/OrdersServletBack/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServletFront</servlet-name>
+    <url-pattern>/pages/front/orders/OrdersServletFront/*</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
